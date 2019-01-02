@@ -7,6 +7,7 @@ stage('checkout')
 stage('deployDev')
 {
   echo "Deploying to Dev after build"
-  sh "./HelloWorld.sh"
+  sh """chmod +x HelloWorld.sh 
+  ./HelloWorld.sh"""
 }
 }
