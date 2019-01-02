@@ -4,9 +4,9 @@ stage('checkout')
 {
   checkout scm
 }
-stage('deployDev')
+stage('deployST')
 {
-  echo "Deploying to Dev after build"
+  echo "Deploying to ST after build and deployment to Dev"
   sh """chmod +x HelloWorld.sh 
   ./HelloWorld.sh"""
 }
