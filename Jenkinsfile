@@ -3,6 +3,7 @@ node
 stage('checkout')
 {
   checkout scm
+  echo 'branch name ' + env.GIT_BRANCH
 }
 stage('deployDev')
 {
